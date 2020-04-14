@@ -6,11 +6,18 @@ int main() {
     double a[] = {1.1, 2.2, 3.3};
     double b[] = {4.4, 5.5, 6.6};
 
-    printf("dot product %f\n", dot(a, b, sizeof(a)/sizeof(a[0]), sizeof(b)/sizeof(b[0])));
-    printf("length of a %f\n", norm(a,sizeof(a)/sizeof(a[0])));
-    printf("length of b %f\n", norm(b,sizeof(b)/sizeof(b[0])));
-    printf("cross product of a and b is:\n");
+    //Calculate dot product
+    double dot_prod = dot(a, b, sizeof(a)/sizeof(a[0]), sizeof(b)/sizeof(b[0]));
+    if(dot_prod){
+        printf("Dot product of a and b: %f\n", dot_prod);
+    }
 
+    //Calculate the length of the vectors
+    printf("Length of a: %f\n", norm(a,sizeof(a)/sizeof(a[0])));
+    printf("Length of b: %f\n", norm(b,sizeof(b)/sizeof(b[0])));
+
+    //Calculate the cross product of the vectors
+    printf("Cross product of a and b:\n");
     for(int i = 0; i < sizeof(a)/sizeof(a[0]); i++){
         if(!cross(a, b, sizeof(a)/sizeof(a[0]), sizeof(b)/sizeof(b[0]))){
             break;
