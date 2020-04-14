@@ -9,10 +9,10 @@ double dot(const double* a, const double* b, int length_a, int length_b){
         return 0;
     }
     else{
-    double dot = 0;
-    for(int i = 0; i < length_a; i++) {
-        dot += *(a + i) * (*(b + i));
-    }
+         double dot = 0;
+            for(int i = 0; i < length_a; i++) {
+                dot += *(a + i) * (*(b + i));
+            }
     return dot;
     }
 
