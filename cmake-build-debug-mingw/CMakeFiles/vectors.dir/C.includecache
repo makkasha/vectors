@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Akkash/CLionProjects/vectors/main.c
+stdio.h
+-
+vectors.h
+C:/Users/Akkash/CLionProjects/vectors/vectors.h
+
+C:/Users/Akkash/CLionProjects/vectors/vectors.c
+vectors.h
+C:/Users/Akkash/CLionProjects/vectors/vectors.h
+math.h
+-
+stdlib.h
+-
+
+C:/Users/Akkash/CLionProjects/vectors/vectors.h
+
